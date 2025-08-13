@@ -6,40 +6,40 @@
   <title>Shinaracha – Digital Business Card</title>
   <style>
     :root{
-      --bg1:#f6f9ff; --bg2:#ffffff; --primary:#e11d48; --text:#0f172a; --muted:#475569;
+      --bg1:#f6f9ff; --bg2:#ffffff; --text:#0f172a; --muted:#475569;
       --btn:#0ea5e9; --btnText:#fff; --card:#ffffff; --shadow:0 10px 30px rgba(2,6,23,.08);
     }
-    body{margin:0;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Helvetica, Arial; background:linear-gradient(180deg,var(--bg1),var(--bg2)); color:var(--text)}
-    .wrap{max-width:460px;margin:24px auto;padding:16px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Helvetica, Arial;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:var(--text)}
+    .wrap{max-width:480px;margin:24px auto;padding:16px}
     .card{background:var(--card);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
-    .header{padding:28px 20px 16px;background:linear-gradient(180deg,#e9f0ff,#ffffff)}
-    .brand{display:flex;align-items:center;gap:10px;justify-content:center}
-    .brand img{height:36px}
-    .avatar{width:108px;height:108px;border-radius:999px;object-fit:cover;border:4px solid #fff;box-shadow:var(--shadow);margin:16px auto 10px;display:block}
-    h1{font-size:22px;line-height:1.2;margin:6px 0 4px;text-align:center}
-    .role{color:var(--muted);text-align:center;margin:0 0 14px}
+    .header{padding:28px 20px;background:linear-gradient(180deg,#e9f0ff,#ffffff)}
+    .logo{display:grid;place-items:center;gap:10px}
+    .logo img{height:60px; width:auto}
+    .company{font-weight:800;color:#1f2937;text-align:center}
+    h1{font-size:22px;line-height:1.2;margin:14px 0 6px;text-align:center}
+    .role{color:var(--muted);text-align:center;margin:0 0 16px}
     .btn-primary{display:block;width:88%;margin:10px auto 12px;background:var(--btn);color:var(--btnText);padding:14px 18px;border:none;border-radius:999px;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}
-    .list{padding:4px 12px 20px}
+    .list{padding:6px 12px 22px}
     .item{display:flex;align-items:center;gap:14px;padding:14px 16px;margin:10px 0;background:#f8fafc;border-radius:16px;text-decoration:none;color:inherit;border:1px solid #eef2f7}
     .icon{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:20px;background:#e2e8f0}
     .item b{font-size:16px}
-    .foot{text-align:center;color:var(--muted);font-size:12px;padding:12px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 18px 18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 18px 20px}
     .chip{border:1px solid #e5e7eb;border-radius:999px;padding:10px 12px;text-align:center;text-decoration:none;color:#111827;background:#fff}
+    .foot{text-align:center;color:var(--muted);font-size:12px;padding:0 12px 16px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card" id="card">
+    <div class="card">
       <div class="header">
-        <div class="brand">
+        <div class="logo">
           <img src="logo_with_transparent_bg.png" alt="Shinaracha Logo"/>
-          <span style="font-weight:800;color:#1f2937">SHINARACHA FROTECTOR CO., LTD.</span>
+          <div class="company">SHINARACHA FROTECTOR CO., LTD.</div>
         </div>
-        <img class="avatar" id="avatar" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400&auto=format&fit=crop" alt="avatar"/>
-        <h1 id="name">Charusri Bumrungwongkawin</h1>
-        <p class="role" id="title">รองกรรมการผู้จัดการ • Deputy Managing Director</p>
-        <button class="btn-primary" id="saveContact">Save Contact</button>
+        <h1>Charusri Bumrungwongkawin</h1>
+        <p class="role">รองกรรมการผู้จัดการ • Deputy Managing Director</p>
+        <a class="btn-primary" id="saveContact" href="Charusri_Bumrungwongkawin_v2.vcf" download>Save Contact</a>
       </div>
 
       <div class="list">
@@ -55,63 +55,17 @@
           <span class="icon">✉️</span>
           <div><b>Email</b><div class="sub">charusri@shinaracha-frotector.com</div></div>
         </a>
-        <a class="item" href="https://wa.me/66845571155" target="_blank" rel="noopener">
+        <a class="item" href="https://wa.me/66865657345" target="_blank" rel="noopener">
           <span class="icon">🟢</span>
           <div><b>WhatsApp</b><div class="sub">Chat now</div></div>
         </a>
         <div class="grid">
           <a class="chip" href="https://www.shinaracha-frotector.com" target="_blank" rel="noopener">🌐 Website</a>
           <a class="chip" href="https://maps.google.com/?q=112%20Soi%20Ramkhamhaeng%20112,%20Saphansoong,%20Bangkok%2010240" target="_blank" rel="noopener">📍 Map</a>
-          <a class="chip" href="tel:+6627295210">📠 Fax: 02-729-5210</a>
         </div>
       </div>
-      <div class="foot">Shinaracha Frotector • 112 Soi Ramkhamhaeng 112, Saphansoong, Bangkok 10240 • Thailand</div>
+      <div class="foot">Shinaracha Frotector • 112 Soi Ramkhamhaeng 112, Saphansoong, Bangkok 10240 • Thailand • Fax: 02-729-5210</div>
     </div>
   </div>
-
-  <script>
-    const profile = {
-      fullName: "Charusri Bumrungwongkawin",
-      org: "Shinaracha Frotector Co., Ltd.",
-      title: "Deputy Managing Director",
-      phoneIntl: "66845571155",
-      phoneDisplay: "+66 84 557 1155",
-      officeIntl: "6627293210",
-      email: "charusri@shinaracha-frotector.com",
-      website: "https://www.shinaracha-frotector.com",
-      address: "112 Soi Ramkhamhaeng 112, Saphansoong, Saphansoong, Bangkok 10240, Thailand",
-      avatarUrl: document.getElementById('avatar').src
-    };
-
-    function buildVCard(p){
-      const lines = [
-        'BEGIN:VCARD',
-        'VERSION:3.0',
-        `FN:${p.fullName}`,
-        `N:${p.fullName};;;`,
-        `ORG:${p.org}`,
-        `TITLE:${p.title}`,
-        `TEL;TYPE=CELL:+${p.phoneIntl}`,
-        `TEL;TYPE=WORK:+${p.officeIntl}`,
-        `EMAIL;TYPE=INTERNET:${p.email}`,
-        `URL:${p.website}`,
-        `ADR;TYPE=WORK:;;${p.address};;;;`,
-        p.avatarUrl ? `PHOTO;VALUE=URI:${p.avatarUrl}` : '',
-        'END:VCARD'
-      ].filter(Boolean).join('
-');
-      return lines;
-    }
-
-    document.getElementById('saveContact').addEventListener('click', () => {
-      const vcf = buildVCard(profile);
-      const blob = new Blob([vcf], {type: 'text/vcard;charset=utf-8'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'Charusri_Bumrungwongkawin.vcf';
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(()=>URL.revokeObjectURL(url), 2000);
-    });
-  </script>
 </body>
 </html>
